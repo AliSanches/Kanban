@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- GOOGLE FONTS - ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="./script.js" defer></script>
+    <script src="./variables.js" defer></script>
+
+    <title>Kanban</title>
+</head>
+<body>
+    <div class="container-main">
+        <!-- Pendente -->
+        <div class="container-pillar bs-pink">
+            <div class="header">
+                <h1>Pendente</h1>
+                <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+
+            <div class="card" id="card-1" draggable="true">
+                <span>Alta prioridade</span>
+                <p>Revisar documento do projeto</p>
+                <div class="conter">
+                    <div class="icons">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>1</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <p>1</p>
+                    </div>
+                    <img src="" alt="" class="profile">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fazendo -->
+        <div class="container-pillar bs-orange">
+             <div class="header">
+                <h1>Fazendo</h1>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="card" id="card-2" draggable="true">
+                <span>Média prioridade</span>
+                <p>Revisar documento do projeto</p>
+                <div class="conter">
+                    <div class="icons">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>1</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <p>1</p>
+                    </div>
+                    <img src="" alt="" class="profile">
+                </div>
+            </div>
+        </div>
+
+        <!-- Concluido -->
+        <div class="container-pillar bs-green">
+             <div class="header">
+                <h1>Concluido</h1>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="card" id="card-3" draggable="true">
+                <span>Baixa prioridade</span>
+                <p>Revisar documento do projeto</p>
+                <div class="conter">
+                    <div class="icons">
+                        <i class="fa-regular fa-comment"></i>
+                        <p>1</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <p>1</p>
+                    </div>
+                    <img src="" alt="" class="profile">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal-main" id="modal-main">
+            <div class="modal" id="modal">
+                <h2>Inclusão</h2>
+                <div class="body-modal">
+                    <div class="conter-modal">
+                        <label for="priority">Prioridade</label>
+                        <select name="priority" id="priority" class="data">
+                            <option id="opt"></option>
+                        </select>
+                    </div>
+
+                <div class="conter-modal">
+                        <label for="priority">Assunto</label>
+                        <input type="text" class="data">
+                </div>
+                </div>
+                <div class="footer-modal">
+                    <button class="btn-modal bg-silver" id="btn-close">
+                        Voltar
+                    </button>
+                    <button class="btn-modal bg-blue">
+                        Confirmar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+</body>
+
+</html>
