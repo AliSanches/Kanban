@@ -2,7 +2,7 @@ import { aPri } from './variables.js';
 
 const columns = document.querySelectorAll('.container-pillar');
 const cards = document.querySelectorAll('.card');
-const btnModal = document.querySelector('#add');
+const btnModal = document.querySelectorAll('.add');
 const modal = document.querySelector('#modal-main');
 const btnClose = document.querySelector('#btn-close');
 
@@ -41,9 +41,13 @@ const loadOpts = () => {
     const select = document.querySelector('#priority');
 
     select.innerHTML = aPri
-        .map((item, index) => `<option value="${item}">${index}</option>`)
-        .join('');
+    .map((item, index) => `<option value="${index}">${item}</option>`)
+    .join('');
 }
 
-btnModal.addEventListener('click', ModalOpen);
+btnModal.forEach((btn) => {
+    btn.addEventListener('click', ModalOpen);
+})
 btnClose.addEventListener('click', ModalOpen);
+
+document.addEventListener("DOMContentLoaded", loadOpts);

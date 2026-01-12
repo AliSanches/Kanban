@@ -11,26 +11,36 @@ body {
     /* background: radial-gradient(#687aa7, #2a324a); */
 }
 
-.bg-blue {
-    background: #2647ca;
-}
-
 .bg-silver {
     background: #919191;
 }
 
+.bg-yellow {
+    background: #f1ea95;
+}
+
+.bg-orange {
+    background: #ebbc24;
+}
+
+.bg-red {
+    background: #e44d26;
+}
+
 .container-main {
-    width: 1000px;
+    width: 1200px;
     height: 700px;
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 2rem;
+    overflow-x: auto;
 }
 
 .container-pillar {
     width: 320px;
     height: 600px;
+    flex-shrink: 0;
     overflow-y: scroll;
     background: #fff;
     scrollbar-width: none;
@@ -101,10 +111,16 @@ span {
     gap: 0.2rem;
 }
 
-
 .conter {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
+}
+
+.conter-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .profile {
@@ -151,6 +167,7 @@ span {
 .body-modal {
     display: flex;
     flex-direction: column;
+    height: 140px;
     gap: 1rem;
 }
 
@@ -161,19 +178,25 @@ span {
 }
 
 .data {
-    padding: 8px 12px;
+    padding: 8px 20px;
     border-radius: 5px;
     outline: none;
     border: 1px solid #dadada;
 }
 
 .footer-modal {
-    padding: 18px 0 5px 0;
+    border-top: 1px solid #9b9b9b;
+    width: 100%;
+    height: 40px;
     display: flex;
+    justify-content: end;
+    align-items: center;
     gap: 0.7rem;
 }
 
 .btn-modal {
+    width: 80px;
+    height: 30px;
     font-size: 14px;
     color: #fff;
     border: none;
@@ -186,4 +209,18 @@ span {
 
 .btn-modal:hover {
     zoom: 95%;
+}
+
+.conter-btn {
+    padding-right: 5px;
+}
+
+@media (min-width: 320px) {
+    .modal-main {
+        width: 100%;
+    }
+
+    .modal {
+        width: 300px;
+    }
 }
