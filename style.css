@@ -8,7 +8,6 @@ body {
     justify-content: center;
     align-items: center;
     background: radial-gradient(#7a7a7a, #2e2e2e);
-    /* background: radial-gradient(#687aa7, #2a324a); */
 }
 
 .bg-silver {
@@ -31,7 +30,7 @@ body {
     width: 1200px;
     height: 700px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     overflow-x: auto;
@@ -185,8 +184,8 @@ span {
 }
 
 .footer-modal {
-    border-top: 1px solid #9b9b9b;
-    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    width: 98%;
     height: 40px;
     display: flex;
     justify-content: end;
